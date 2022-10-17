@@ -1,0 +1,6 @@
+<main>
+    <div *ngFor="let task of tasks">
+        <input type="checkbox" [checked]="task.completed">
+        {{task.title}}
+    </div>
+</main>
