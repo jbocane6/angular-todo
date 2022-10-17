@@ -1,5 +1,5 @@
 import { remultExpress } from 'remult/remult-express'
-import { Task } from 'src/shared/Task';
+import { Task } from '../shared/Task';
 import { remult } from 'remult';
 
 export const api = remultExpress({
