@@ -3,7 +3,7 @@ import { Task } from 'src/shared/Task';
 import { remult } from 'remult';
 
 export const api = remultExpress({
-    entities: [Task]
+    entities: [Task],
     initApi: async () => {
         const taskRepo = remult.repo(Task);
         if (await taskRepo.count() === 0) {
